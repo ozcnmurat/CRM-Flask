@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Kayıt Ol{% endblock %}
+
+{% block content %}
+    <div class="form-container">
+        <h2>Kayıt Ol</h2>
+        <form action="/register" method="POST">
+            <input type="text" name="username" placeholder="Kullanıcı Adı" required>
+            <input type="email" name="email" placeholder="E-posta" required>
+            <input type="text" name="phone" placeholder="Telefon Numarası">
+            <input type="password" name="password" placeholder="Şifre" required>
+            <button type="submit" class="btn-normal">Kayıt Ol</button>
+        </form>
+        <form action="/register/google">
+            <button class="btn-google">Google ile Kayıt Ol</button>
+        </form>
+    </div>
+{% endblock %}

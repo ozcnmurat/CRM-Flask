@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Ana Sayfa{% endblock %}
+
+{% block content %}
+    <h2>Hoş Geldiniz!</h2>
+    <p>CRM uygulamasına giriş yapmak veya kayıt olmak için aşağıdaki butonları kullanabilirsiniz.</p>
+    <div class="button-container">
+        <button class="btn-home" onclick="window.location.href='/login'">Giriş Yap</button>
+        <button class="btn-home" onclick="window.location.href='/register'">Kayıt Ol</button>
+    </div>
+{% endblock %}

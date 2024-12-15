@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+    <h2>Hoş Geldiniz, {{ session['user']['name'] }}!</h2>
+    <p>Burası kullanıcı panelinizdir.</p>
+    <form action="/logout" method="POST">
+        <button type="submit" class="btn-normal">Çıkış Yap</button>
+    </form>
+{% endblock %}
